@@ -32,14 +32,14 @@ public class Main {
                 Boolean archivesReadBol = pathArchives.canRead();
                 Boolean archivesWriteBol = pathArchives.canWrite();
                 if (archivesReadBol.equals(true)) {
-                    archivesRead = " | Se puede leer";
+                    archivesRead = " | Permite lectura";
                 } else {
-                    archivesRead = " | No se puede leer";
+                    archivesRead = " | No permite lectura";
                 }
                 if (archivesWriteBol.equals(true)) {
-                    archivesWrite = " | Se puede escribir";
+                    archivesWrite = " | Permite escritura";
                 } else {
-                    archivesWrite = " | No se puede escribir";
+                    archivesWrite = " | No permite escritura";
                 }
                 // sout con todos los datos de los archivos
                 System.out.println(archivesName + " | Tamanio en byte: " + archivesSpace + archivesRead + archivesWrite);
